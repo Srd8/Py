@@ -6,9 +6,9 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib import error, parse, request
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "5078034194:AAGCfu2i-eWZvjcQ-1P2pjlPCuaryTo8nro").strip()
-ADMIN_ID = os.environ.get("ADMIN_ID", "5220076610").strip()
-WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "https://debotnjr11.vercel.app/api/telegram-webhook").strip()
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "").strip()
+ADMIN_ID = os.environ.get("ADMIN_ID", "").strip()
+WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "").strip()
 HOST = os.environ.get("HOST", "0.0.0.0")
 PORT = int(os.environ.get("PORT", "8080"))
 STATE_FILE = os.environ.get("STATE_FILE", "stars_gifts_state.json")
